@@ -1,6 +1,6 @@
 import axios from 'axios'
 import baseUrl from './base'
-console.log('baseUrl', baseUrl)
+// console.log('baseUrl', baseUrl)
 axios.defaults.baseURL = baseUrl.baseUrl
 // 添加请求拦截器
 axios.interceptors.request.use(function (config) {

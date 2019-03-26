@@ -16,12 +16,12 @@ export default {
   },
   methods: {
     getData () {
-      console.log('home', home.login)
-      let parmse = {
+      // console.log('home', home.login)
+
+      home.login({
         phone: '18530870713',
         password: 'wang111'
-      }
-      home.login(parmse).then(res => {
+      }).then(res => {
         console.log('res', res)
       })
     }
