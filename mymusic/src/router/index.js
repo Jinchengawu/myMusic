@@ -7,7 +7,12 @@ const home = r => require.ensure(
   () => r(require('@/view/home/home')),
   'home'
 )
-
+// login
+const login = r => require.ensure(
+  [],
+  () => r(require('@/view/login/login')),
+  'login'
+)
 Vue.use(Router)
 
 export default new Router({
@@ -21,6 +26,11 @@ export default new Router({
       path: '/home',
       name: 'home',
       component: home
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: login
     }
   ]
 })

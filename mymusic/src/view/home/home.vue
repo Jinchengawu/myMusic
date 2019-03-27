@@ -19,8 +19,8 @@ export default {
       // console.log('home', home.login)
 
       home.login({
-        phone: '18530870713',
-        password: 'wang111'
+        phone: '18837176591',
+        password: 'wang1996'
       }).then(res => {
         console.log('res', res)
       })
